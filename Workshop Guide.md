@@ -1,13 +1,13 @@
-# Accuracy-Only Automatic LQA
+# Workshop Guide
 
 ## Goal of the Workshop
 
-Participants will experience a simplified Automatic LQA workflow:
+Participants will experience a simplified accuracy-only Automatic LQA workflow:
 
 1. Calibrate a human gold dataset.  
 2. Inspect how the dataset becomes an LLM-as-a-judge evaluation set.  
 3. Run a baseline judge prompt in LangSmith.  
-4. Evaluate the judge with evaluators.  
+4. Evaluate the judge with code evaluators.  
 5. Compare a second prompt version or prepared second run.  
 6. Understand why meta-evaluation is necessary.
 
