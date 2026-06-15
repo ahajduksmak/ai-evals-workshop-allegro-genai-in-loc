@@ -17,47 +17,17 @@ By the end of the workshop you will be able to:
 
 ---
 
-## Who is this for?
-
-This workshop is designed for localisation specialists, translators, LQA reviewers and localisation engineers, as well as anyone looking to enhance their professional portfolio with hands-on AI-quality verification and evaluation skills.
-
----
-
-## Workshop Structure
-
-The workshop is divided into three stages:
-
-### 1. Dataset Annotation
-Curate and annotate a localisation dataset by hand-labelling outputs.
-
-### 2. Prompt Experimentation
-Design and iteratively refine prompts for specific localisation tasks using your annotated dataset as ground truth.
-
-### 3. Evaluation
-Run a structured evaluation to score model outputs against your annotations, identify failure modes, and plan workflow improvements.
-
----
-
-## Requirements
-
-Requirement | Details
---- | ---
-Python 3.10+ | For running evaluation scripts
-Access to LangSmith | Needed for workshop exercises
-Spreadsheet tool | Google Sheets or Excel for annotation
-Git | For cloning this repository and sharing updates
-
----
-
 ## Getting Started
 
-Please make sure you can access the [LangSmith workspace](https://eu.smith.langchain.com/).
-Workshop materials and dataset templates will be added to this repository before the session.
+Workshop date and time: June 24th, 17:10 - 19:40.
+
+For the full workshop flow, section timings, materials checklist, and expected outcomes, see [Workshop Agenda](Workshop%20Agenda.md).
+
+Please make sure you can access the [LangSmith workspace](https://eu.smith.langchain.com/) before the session.
 
 ---
 
 ## Resources
-
 
 - [GEMBA – GPT-based MT evaluation](https://arxiv.org/abs/2302.13823)
 - [MQM Error Typology](https://themqm.org/)
