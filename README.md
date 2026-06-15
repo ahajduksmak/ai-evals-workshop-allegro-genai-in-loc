@@ -45,7 +45,7 @@ To get the most out of this hands-on session, please review the following techni
 ### Operational Setup (Before the Workshop)
 * **LangSmith Access:** Check your email for an invitation to our [LangSmith workspace](https://eu.smith.langchain.com/). Please accept the invitation and log in before the session to ensure your access works.
 * **No API Keys Needed:** Pre-configured LLM endpoints will be provided directly in the LangSmith environment.
-* **Workshop Agenda:** Familiarise yourself with the [workshop agenda](docs/agenda.md). During the workshop, you will be completing a live calibration task where you will annotate e-commerce translations based on specific Accuracy subtypes and Severity levels. Reviewing these definitions beforehand will ensure a smooth, fast-paced live session.
+* **Workshop Agenda:** Familiarise yourself with the [workshop agenda](docs/workshop-agenda.md). During the workshop, you will be completing a live calibration task where you will annotate e-commerce translations based on specific Accuracy subtypes and Severity levels. Reviewing these definitions beforehand will ensure a smooth, fast-paced live session.
 
 ### Knowledge Prerequisites
 
