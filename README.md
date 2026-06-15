@@ -59,7 +59,7 @@ To get the most out of this hands-on session, please review the following techni
 * **QA Frameworks:** Some familiarity with automated testing or translation quality frameworks (e.g., MQM, BLEU, DQF).
 
 #### Pre-Reading
-* To make sure you are familiar with most of the concepts we will be discussing during the workshop, please take a look at the following:
+To make sure you are familiar with most of the concepts we will be discussing during the workshop, please take a look at the following:
 - [Offline Evaluation](https://docs.langchain.com/langsmith/evaluation)
 - [Prompt Engineering](https://docs.langchain.com/langsmith/prompt-engineering)
 
