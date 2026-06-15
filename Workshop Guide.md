@@ -1,5 +1,7 @@
 # Workshop Guide
 
+## Allegro x GenAI in Localisation
+
 ## Goal of the Workshop
 
 Participants will experience a simplified accuracy-only Automatic LQA workflow:
