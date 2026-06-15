@@ -38,7 +38,7 @@ Run a structured evaluation to score model outputs against your annotations, ide
 
 ---
 
-## Workshop Prerequisites
+## Getting Started
 
 To get the most out of this hands-on session, please review the following technical setup and background knowledge criteria.
 
