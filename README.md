@@ -19,11 +19,11 @@ By the end of the workshop you will be able to:
 
 ## Getting Started
 
-Workshop date and time: June 24th, 17:10 - 19:40.
+Workshop date and time: June 24, 2026, 17:10 - 19:40 CEST (UTC+2).
 
 For the full workshop flow, section timings, materials checklist, and expected outcomes, see [Workshop Agenda](Workshop%20Agenda.md).
 
-Please make sure you can access the [LangSmith workspace](https://eu.smith.langchain.com/) before the session.
+Please make sure you can access the [LangSmith workspace](https://smith.langchain.com/) before the session. Use the exact workspace URL from your invitation email if your access is region-specific.
 
 ---
 

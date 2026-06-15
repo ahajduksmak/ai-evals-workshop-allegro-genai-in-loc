@@ -2,8 +2,8 @@
 
 ## AI Evals Workshop - Allegro x GenAI in Localisation
 
-Date: June 24th
-Time: 17:10 - 19:40 (150 minutes)
+Date: June 24, 2026
+Time: 17:10 - 19:40 CEST (UTC+2) (150 minutes)
 
 ---
 
