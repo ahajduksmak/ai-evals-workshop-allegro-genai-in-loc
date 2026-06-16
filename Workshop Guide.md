@@ -67,7 +67,7 @@ Each participant will work on their own e-commerce translation dataset. Each row
 
 Design and iteratively refine prompts for specific localisation tasks using the human-annotated dataset as the ground truth.
 
-Each participant will start from a [baseline experiment prompt](https://github.com/mjunczyk/ai-evals-workshop-allegro-genai-in-loc/blob/main/docs/baseline-judge-prompt.md) and create their own prompt version.
+Each participant will start from a [baseline experiment prompt](https://github.com/mjunczyk/ai-evals-workshop-allegro-genai-in-loc/blob/main/docs/prompts/baseline-judge-prompt.md) and create their own prompt version.
 
 **Valid prompt changes include:**
 
@@ -89,9 +89,9 @@ Each participant will set up three evaluators:
 
 | Evaluator | Question |  
 |---|---|  
-| [**Error Presence**](https://github.com/ahajduksmak/ai-evals-workshop-allegro-genai-in-loc/blob/main/docs/has_accuracy_error_match.py) | Did the judge correctly detect whether any Accuracy error is present? |   
-| [**Accuracy Subtype**](https://github.com/ahajduksmak/ai-evals-workshop-allegro-genai-in-loc/blob/main/docs/accuracy_subtype_match.py) | Did the judge identify the same Accuracy subtype as the human gold annotation? |  
-| [**Critical Detection**](https://github.com/ahajduksmak/ai-evals-workshop-allegro-genai-in-loc/blob/main/docs/critical_detection_match.py) | Did the judge correctly detect whether the Accuracy error is critical? |
+| [**Error Presence**](https://github.com/mjunczyk/ai-evals-workshop-allegro-genai-in-loc/blob/main/docs/evaluators/has_accuracy_error_match.py) | Did the judge correctly detect whether any Accuracy error is present? |   
+| [**Accuracy Subtype**](https://github.com/mjunczyk/ai-evals-workshop-allegro-genai-in-loc/blob/main/docs/evaluators/accuracy_subtype_match.py) | Did the judge identify the same Accuracy subtype as the human gold annotation? |  
+| [**Critical Detection**](https://github.com/mjunczyk/ai-evals-workshop-allegro-genai-in-loc/blob/main/docs/evaluators/critical_detection_match.py) | Did the judge correctly detect whether the Accuracy error is critical? |
 
 ---
 
