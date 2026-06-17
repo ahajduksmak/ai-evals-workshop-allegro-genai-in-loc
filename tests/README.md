@@ -62,8 +62,8 @@ fields, but here is a condensed reference:
 }
 ```
 
-Valid `accuracy_subtype` values (from `docs/datasets/Czech`):
-`none` · `mistranslation` · `omission` · `addition` · `untranslated`
+Valid `accuracy_subtype` values (from `docs/datasets/Czech` and `docs/datasets/Dutch`):
+`none` · `mistranslation` · `omission` · `addition` · `untranslated` · `unnecessarily_translated`
 
 Use `null` to simulate a missing/blank value. `expected_score` must be `1`
 (match) or `0` (mismatch).
@@ -95,7 +95,8 @@ and `major` both count as non-critical. Valid values:
 ```
 
 This evaluator only cares whether each side is `"none"` (no error) or anything
-else (has error). Uses the same `accuracy_subtype` vocabulary as above.
+else (has error). Uses the same `accuracy_subtype` vocabulary (`none`, `mistranslation`,
+`omission`, `addition`, `untranslated`, `unnecessarily_translated`) as above.
 
 ---
 
