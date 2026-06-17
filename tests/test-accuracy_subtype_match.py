@@ -1,4 +1,5 @@
-"""Unit tests for docs/evaluators/accuracy_subtype_match.py"""
+# Tests for accuracy_subtype_match code evaluator
+# docs/evaluators/accuracy_subtype_match.py — scores 1 when predicted accuracy subtype equals the gold subtype.
 
 import pytest
 

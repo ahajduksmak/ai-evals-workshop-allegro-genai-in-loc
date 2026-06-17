@@ -1,4 +1,5 @@
-"""Unit tests for docs/evaluators/has_accuracy_error_match.py"""
+# Tests for has_accuracy_error_match code evaluator
+# docs/evaluators/has_accuracy_error_match.py — scores 1 when predicted and gold agree on whether any accuracy error is present.
 
 import pytest
 

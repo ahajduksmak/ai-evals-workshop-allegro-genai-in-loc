@@ -1,4 +1,5 @@
-"""Unit tests for docs/evaluators/critical_detection_match.py"""
+# Tests for critical_detection_match code evaluator
+# docs/evaluators/critical_detection_match.py — scores 1 when predicted and gold agree on whether severity is critical.
 
 import pytest
 
