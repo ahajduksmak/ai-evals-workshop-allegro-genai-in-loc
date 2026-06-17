@@ -25,14 +25,19 @@ CI runs the same command automatically on every push and pull request
 
 ```
 tests/
-├── conftest.py                        # Shared builders, loaders, helpers
-├── fixtures/
-│   ├── accuracy_subtype_match.json    # Editable business test cases
-│   ├── critical_detection_match.json  # Editable business test cases
-│   └── has_accuracy_error_match.json  # Editable business test cases
-├── test-accuracy_subtype_match.py     # Tests for accuracy_subtype_match
-├── test-critical_detection_match.py   # Tests for critical_detection_match
-└── test-has_accuracy_error_match.py   # Tests for has_accuracy_error_match
+├── README.md                          # This file
+├── conftest.py                        # Shared builders, loaders, helpers (load_evaluator,
+│                                      #   make_prediction/gold/run/example, load_cases, …)
+├── fixtures/                          # ✏️  Edit these to add business-level test cases
+│   ├── accuracy_subtype_match.json    #   "does subtype label match?" cases
+│   ├── critical_detection_match.json  #   "is severity critical?" cases
+│   └── has_accuracy_error_match.json  #   "is any error present?" cases
+├── test-accuracy_subtype_match.py     # Tests for accuracy_subtype_match evaluator
+│                                      #   scores 1 when predicted subtype == gold subtype
+├── test-critical_detection_match.py   # Tests for critical_detection_match evaluator
+│                                      #   scores 1 when both sides agree on critical vs not
+└── test-has_accuracy_error_match.py   # Tests for has_accuracy_error_match evaluator
+                                       #   scores 1 when both sides agree on error vs none
 ```
 
 ---
