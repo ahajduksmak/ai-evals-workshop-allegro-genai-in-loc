@@ -23,8 +23,40 @@ load_cases(name) / case_to_run_example(case) / case_id(case)
     These let non-technical users add test cases by editing JSON only.
 """
 
+import importlib.util
 import json
 from pathlib import Path
+
+
+# ---------------------------------------------------------------------------
+# Evaluator loading
+# ---------------------------------------------------------------------------
+
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+_EVALUATORS_DIR = _REPO_ROOT / "docs" / "evaluators"
+
+
+def load_evaluator(name: str):
+    """Import an evaluator module from docs/evaluators/<name>.py and return its
+    ``perform_eval`` callable.
+
+    Raises a clear, actionable error if the evaluator file is missing (e.g. after
+    a repository restructure) instead of a cryptic FileNotFoundError raised deep
+    inside the import machinery at collection time.
+    """
+    path = _EVALUATORS_DIR / f"{name}.py"
+    if not path.is_file():
+        raise FileNotFoundError(
+            f"Evaluator '{name}' not found at {path}. "
+            f"Expected it under {_EVALUATORS_DIR}. "
+            "If the evaluators moved, update tests/conftest.py:_EVALUATORS_DIR."
+        )
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Could not load evaluator spec for '{name}' from {path}.")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.perform_eval
 
 
 # ---------------------------------------------------------------------------

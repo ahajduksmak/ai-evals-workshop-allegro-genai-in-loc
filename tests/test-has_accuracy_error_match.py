@@ -1,33 +1,19 @@
 """Unit tests for docs/evaluators/has_accuracy_error_match.py"""
 
-import importlib.util
-from pathlib import Path
-
 import pytest
 
 from conftest import (
     case_id,
     case_to_run_example,
     load_cases,
+    load_evaluator,
     make_example,
     make_gold,
     make_prediction,
     make_run,
 )
 
-# ---------------------------------------------------------------------------
-# Import evaluator module
-# ---------------------------------------------------------------------------
-
-_EVALUATOR_PATH = (
-    Path(__file__).resolve().parent.parent
-    / "docs" / "evaluators" / "has_accuracy_error_match.py"
-)
-
-_spec = importlib.util.spec_from_file_location("has_accuracy_error_match", _EVALUATOR_PATH)
-_mod = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_mod)
-perform_eval = _mod.perform_eval
+perform_eval = load_evaluator("has_accuracy_error_match")
 
 
 # ---------------------------------------------------------------------------
